@@ -17,10 +17,21 @@ font-family: 'Titan One', cursive;
   box-sizing: border-box;
 }
 
+header {
+  text-align: center;
+  position: fixed
+  width: 100%;
+  background-color: #F8F8FF;
+}
+
+.logo {
+  max-width: 250px;
+}
+
 nav {
   display: inline-block;
   width: 100%;
-  background-color: #F8F8FF;
+  margin: 0;
 }
 
 nav > ul {
@@ -50,19 +61,7 @@ nav > ul > li > a:active {
   color: #f6e5d8;
 }
 
-main {
-  padding-top: 163px;
-}
 
-header {
-  text-align: center;
-  position: fixed
-  width: 100%;
-}
-
-.logo {
-  max-width: 250px;
-}
 
 body {
   background-color: #ffffff;
@@ -76,6 +75,13 @@ body {
 footer {
   border-top: 3px solid #f6e5d8;
   background-color: #594a61;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+
+footer p {
+  color: white;
 }
 
 h1, h2, h3, h4 {
@@ -83,19 +89,20 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 700;
   color: #796677;
 }
 
 h2 {
-  font-size: 2em;
+  text-align: center;
+  font-size: 1.5em;
   font-weight: 700;
   color: #c9d2cb;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
   color: #796677;
 }
@@ -152,6 +159,7 @@ a:active { /* selected link */
   color: #f6e5d8;
   text-transform: uppercase;
   border: 2px solid #f6e5d8;
+  margin: 10px;
 }
 
 .button.contact:hover, .button.contact:focus {
@@ -177,25 +185,43 @@ img {
   margin: 25px 0;
 }
 
+#work {
+  padding: 25px 0 25px 0;
+}
+
 #work .row {
-  padding-bottom: 25px;
+  padding: 25px;
   border-bottom: 1px solid #4a4a4a;
-}
-
-#hero h1 {
-  text-align: center; /* Centers text */
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#headshot {
-  display: inline-block;
-  width: 50%;
-  margin: auto;
-  height: auto;
 }
 
 #hero {
   background-color: #F8F8FF;
+  padding: 0px 20px 20px 20px;
+}
+
+#hero h1 {
+  text-align: center;
+  padding: 10px 0 0 0;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+#hero p {
+  margin: 0;
+  text-align: center;
+}
+
+#aboutme h1{
+  padding: 10px;
+  text-align: center;
+}
+#headshot {
+  display: inline-block;
+  max-width: 350px;
+  margin: 15px;
+}
+
+#footersocial {
+  margin: 10px
 }
