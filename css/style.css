@@ -19,13 +19,14 @@ font-family: 'Titan One', cursive;
 
 header {
   text-align: center;
-  position: fixed
+  position: fixed;
   width: 100%;
-  background-color: #F8F8FF;
+  background-color: white;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 200px;
+  margin: 15px 0 0 0;
 }
 
 nav {
@@ -62,7 +63,6 @@ nav > ul > li > a:active {
 }
 
 
-
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -70,6 +70,10 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #594a61;
+}
+
+main {
+  padding: 150px 0 0 0;
 }
 
 footer {
@@ -113,7 +117,7 @@ h4 {
 }
 
 a {
-  color: #796677;
+  color: #c9d2cb;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
@@ -129,19 +133,21 @@ a:active { /* selected link */
 }
 
 .button, .button-resume {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #796677;
-  color: #ffffff; /* needed to override the default link color */
+  display: inline-block;
+  background-color: #594a61;
+  color: #ffffff;
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #594a61; /* width of the border, type, color */
+  border-bottom: 2px solid #796677;
   transition: 0.2s opacity;
 }
 
 .button:hover, .button:focus, .button-resume:hover, .button-resume:focus {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  color: #c9d2cb;
+  cursor: pointer;
 }
 
 .button:active, .button-resume:active {
@@ -155,15 +161,14 @@ a:active { /* selected link */
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #f6e5d8;
+  background-color: #c9d2cb;
+  color: #594a61;
   text-transform: uppercase;
-  border: 2px solid #f6e5d8;
   margin: 10px;
 }
 
 .button.contact:hover, .button.contact:focus {
-  background-color: #594a61;
+  background-color: #796677;
   color: #ffffff;
 }
 
@@ -172,17 +177,28 @@ a:active { /* selected link */
   text-decoration: none;
 }
 
+
 img {
   width: 100%;
 }
 
 /* Layout styling */
+
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
   margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #work {
@@ -191,12 +207,25 @@ img {
 
 #work .row {
   padding: 25px;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid #baa5a4;
 }
 
 #hero {
-  background-color: #F8F8FF;
-  padding: 0px 20px 20px 20px;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
+  border-style: inset;
+  border-width: 1px;
+  color: #c9d2cb;
 }
 
 #hero h1 {
@@ -215,6 +244,7 @@ img {
 #aboutme h1{
   padding: 10px;
   text-align: center;
+  margin-top: 0;
 }
 #headshot {
   display: inline-block;
@@ -224,4 +254,73 @@ img {
 
 #footersocial {
   margin: 10px
+}
+/* Device sizing */
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .logo {
+    margin: 0 0 0 20px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+  width: 50%;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+
+  .logo {
+    margin: 0 0 0 20px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-lg-5 {
+  width: 41.66%;
+  }
+  .col-lg-7 {
+  width: 58.33%;
+  }
 }
