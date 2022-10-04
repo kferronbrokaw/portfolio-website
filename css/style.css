@@ -184,12 +184,13 @@ img {
 
 /* Layout styling */
 
-.container {
+.container, .workpagecontainer {
   padding: 0 15px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .row {
   margin: 25px 0;
@@ -209,6 +210,7 @@ img {
   padding: 25px;
   border-bottom: 1px solid #baa5a4;
 }
+
 
 #hero {
   padding: 20px;
@@ -255,6 +257,21 @@ hr {
 #footersocial {
   margin: 10px
 }
+
+
+.workpagecontainer {
+  padding: 25px;
+}
+
+.workpageimages {
+  margin: 25px 0 15px 0;
+}
+
+#bar32logo {
+  max-width: 300px;
+  margin: 40px auto;
+}
+
 
 
 #cityscape {
