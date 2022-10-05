@@ -103,6 +103,7 @@ h2 {
   font-size: 1.5em;
   font-weight: 700;
   color: #c9d2cb;
+  letter-spacing: .25px;
 }
 
 h3 {
@@ -177,6 +178,11 @@ a:active { /* selected link */
   text-decoration: none;
 }
 
+.button-resume {
+  display: inline-block;
+  margin: auto;
+}
+
 
 img {
   width: 100%;
@@ -248,10 +254,27 @@ hr {
   text-align: center;
   margin-top: 0;
 }
+
+#aboutme .container{
+  padding: 25px;
+}
+
+#skills-tools {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#skills-tools ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
 #headshot {
   display: inline-block;
-  max-width: 350px;
-  margin: 15px;
+  width: 100%;
+  margin: auto;
 }
 
 #footersocial {
@@ -274,13 +297,15 @@ hr {
 
 
 
+/* Animation */
+
 #cityscape {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-/* Animation */
+
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -341,6 +366,14 @@ Medium devices (640px and larger)
   .col-md-6 {
   width: 50%;
   }
+  #aboutme h1{
+    text-align: left;
+  }
+
+  #skills-tools .row {
+    max-width: 600px;
+    margin: auto;
+  }
 }
 
 /* ==============================
@@ -376,5 +409,13 @@ Large devices (1024px or larger)
   }
   .col-lg-7 {
   width: 58.33%;
+  }
+
+  #aboutme h1{
+    text-align: left;
+  }
+  #skills-tools .row {
+    max-width: 600px;
+    margin: auto;
   }
 }
