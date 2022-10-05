@@ -17,6 +17,10 @@ font-family: 'Titan One', cursive;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   text-align: center;
   position: fixed;
