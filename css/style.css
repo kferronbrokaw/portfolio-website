@@ -22,30 +22,24 @@ html {
 }
 
 header {
-  text-align: center;
   position: fixed;
   width: 100%;
   background-color: white;
 }
 
 .logo {
-  max-width: 200px;
-  margin: 15px 0 0 0;
+  max-width: 150px;
+  margin: 15px 0 10px 0;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
+#skills-tools .col-md-6 {
+width: 50%;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -66,6 +60,40 @@ nav > ul > li > a:active {
   color: #f6e5d8;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #594a61;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding-top: 30px;
+  font-size: 20px;
+  padding-right: 5;
+}
 
 body {
   background-color: #ffffff;
@@ -77,7 +105,7 @@ body {
 }
 
 main {
-  padding: 150px 0 0 0;
+  padding: 80px 0 0 0;
 }
 
 footer {
@@ -228,18 +256,6 @@ img {
   width: 100%;
 }
 
-hr {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100px;
-  border-style: inset;
-  border-width: 1px;
-  color: #c9d2cb;
-}
-
 #hero h1 {
   text-align: center;
   padding: 10px 0 0 0;
@@ -359,6 +375,7 @@ Medium devices (640px and larger)
 
   .logo {
     margin: 0 0 0 20px;
+    max-width: 200px;
   }
 
   nav {
@@ -367,9 +384,32 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+  }
+
+
+
+  main {
+    padding: 100px 0 0 0;
+  }
+
   .col-md-6 {
   width: 50%;
   }
+
   #aboutme h1{
     text-align: left;
   }
@@ -400,6 +440,7 @@ Large devices (1024px or larger)
 
   .logo {
     margin: 0 0 0 20px;
+    max-width: 200px;
   }
 
   nav {
@@ -411,6 +452,9 @@ Large devices (1024px or larger)
   .col-lg-5 {
   width: 41.66%;
   }
+  #skills-tools .col-md-6 {
+  width: 50%;
+  }
   .col-lg-7 {
   width: 58.33%;
   }
@@ -418,6 +462,7 @@ Large devices (1024px or larger)
   #aboutme h1{
     text-align: left;
   }
+
   #skills-tools .row {
     max-width: 600px;
     margin: auto;

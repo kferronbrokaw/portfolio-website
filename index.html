@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="author" content="Kelsey Ferron">
@@ -17,23 +16,26 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Titan+One&display=swap" rel="stylesheet">
+<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/96f9deecbc.js" crossorigin="anonymous"></script>
 </head>
-
-  <body>
+<body>
 	<header>
-		<div>
+		<div class="container">
 			<!-- Kelsey Ferron Logo -->
-			<a href="index.html">
+			<div class="navtoggle" id="myNavtoggle">
+				<a href="index.html">
 				<img class="logo" src="img/KelseyFerron-Logo.svg" alt="Kelsey Ferron Logo">
-			</a>
-
+				</a>
       <nav>
 				<ul>
 	        <li><a href="index.html">Work</a></li>
 	        <li><a href="about.html">About</a></li>
-	        <li><a href="#contact">Contact</a></li>
+	        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 				</ul>
       </nav>
+			</div>
     </div>
 	</header>
 
@@ -44,7 +46,6 @@
 			<h1>
 				Hi, I'm Kelsey
 			</h1>
-			<hr>
 			<p>A designer based in Cleveland, Ohio at Brokaw,&nbsp;Inc.</p>
 	</div>
 	</div>
@@ -709,6 +710,11 @@
 			<p>&#169;2022 Kelsey Ferron</p>
 		</div>
 	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
+
 </body>
 </html>
